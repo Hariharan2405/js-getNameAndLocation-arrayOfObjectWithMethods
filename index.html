@@ -1,0 +1,38 @@
+<!DocType html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="">
+		<meta name="keywords" content="HTML,JavaScript">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Name and Location</title>	
+	
+	</head>
+	
+	<body>
+		<script>
+		
+			var users = [
+					  {
+						first_name: 'Mike',
+						location: 'London'
+					  },
+					  {
+						first_name: 'Tim',
+						location: 'US'
+					  },
+					  {
+						first_name: 'John',
+						location: 'Australia'
+					  }
+					];
+			
+					
+					var x=users.map(function(val){
+						return val.first_name+" lives in "+val.location;
+					})
+					console.log(x);
+			
+		</script>
+	</body>
+</html>
